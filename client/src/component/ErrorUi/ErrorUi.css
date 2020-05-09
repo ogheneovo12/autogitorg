@@ -1,0 +1,54 @@
+.modal {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2555px;
+    color: white;
+  }
+  .modalBox {
+    width: 60%;
+    height: 300px;
+    background-color: #fff;
+    margin: 150px auto;
+    color: #000;
+    padding: 20px;
+  }
+  .close {
+    text-align: right;
+    width: 100%;
+  }
+  .errorContent {
+    width: 100%;
+    display: flex;
+    height: 100%;
+  }
+  .ErrorInfo,
+  .ErrorImage {
+    width: 50%;
+    height: 100%;
+  }
+  
+  
+  @media only screen and (max-width:767px){
+    .modalBox{
+      width:100%;
+      height:100%;
+    }
+    .errorContent{
+      flex-direction:column;
+    }
+    .ErrorImage,.ErrorInfo{
+      width:100%;
+      height:50vh;
+    }
+    .ErrorInfo h2{
+       font-size:1.5em;
+     
+    }
+  }
