@@ -10,9 +10,13 @@ export async function fetchOrganisation(
       status: true,
       onInit: true,
     });
+   const res = await axios.get("/api/org");
+   if(!res){
+     throw "Server ERROR";
+   }
     const {
       data: { avatar_url, login },
-    } = await axios.get("https://api.github.com/orgs/ecxTest");
+    } = await axios.get(`https://api.github.com/orgs/${res.data.orgName}`);
     setOrgName(login);
     setOrgLogo(avatar_url);
     setLoading({
