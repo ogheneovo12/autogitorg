@@ -5,7 +5,7 @@ const axios = require("axios");
 require('dotenv').config()
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-// app.use(express.static(path.resolve(__dirname,"../client/build")))
+app.use(express.static(path.resolve(__dirname,"../client/build")))
 app.post("/api/invite",async (req,res)=>{
     try{
         const response = await axios.put(
