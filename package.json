@@ -4,7 +4,6 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/server.js  -p $PORT",
-    "heroku-postbuild": "rm -rf ./client/build && cd client && npm install --only=dev && npm install && npm run build",
     "dev": "nodemon src/server.js"
   },
   "author": "",
