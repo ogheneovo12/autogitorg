@@ -1,0 +1,17 @@
+{
+    "name": "autogitorg",
+    "description": "A web app that allows github users to invite themself to your org",
+    "repository": "https://github.com/ogheneovo12/autogitorg",
+    "logo": "https://i.pinimg.com/564x/b0/08/06/b0080608cc2fe2fd12333d6ff8ad2c0a.jpg",
+    "keywords": ["node", "express", "react"],
+    "env": {
+        "Authorization": {
+          "description": "your github access token with a scope of admin:org.",
+          "generator": "https://docs.cachethq.io/docs/github-oauth-token a link to setting up ur access tolen"
+    },
+    "orgName":{
+        "description":"your github organisation name you want people to join or recieve invite for",
+        "generator":"github,com"
+    }
+   }
+  }
