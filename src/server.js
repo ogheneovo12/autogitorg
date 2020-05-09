@@ -3,4 +3,4 @@ const app = require("./app")
 
 const server= http.createServer(app);
 
-server.listen(5000,()=>console.log("server is listening"))
+server.listen(process.env.PORT,()=>console.log("server is listening"))
