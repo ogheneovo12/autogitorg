@@ -6,10 +6,12 @@
     "keywords": ["node", "express", "react"],
     "env": {
         "Authorization": {
-          "description": "your github access token with a scope of admin:org.",   
+          "description": "your github access token with a scope of admin:org.",
+        "generator":""
     },
     "orgName":{
         "description":"your github organisation name you want people to join or recieve invite for",
+        "generator":""
     }
    }
   }
